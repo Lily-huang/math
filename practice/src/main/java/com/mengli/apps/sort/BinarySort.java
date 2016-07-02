@@ -1,6 +1,6 @@
 package com.mengli.apps.sort;
 
-import java.util.Random;
+import com.mengli.apps.utils.RandomUtil;
 
 /**
  * Created by mlhuang on 6/30/16.
@@ -29,17 +29,9 @@ public class BinarySort {
     }
 
     public static void main(String args[]) {
-        int count = 15;
-        int[] nos = new int[count];
-        Random r = new Random();
-        for (int i = 0; i < count; i++) {
-            int paramInt = r.nextInt(100);
-            nos[i] = paramInt;
-            System.out.print(paramInt + " ");
-        }
-        System.out.println();
+        int[] array=RandomUtil.getRandomNumList(15,100);
         System.out.println(" >>> Sort num as ");
-        int[] result = binarySort(nos);
+        int[] result = binarySort(array);
         for (int k = 0; k < result.length; k++) {
             System.out.print(result[k] + " ");
         }
