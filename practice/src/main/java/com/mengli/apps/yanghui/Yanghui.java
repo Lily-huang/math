@@ -6,7 +6,6 @@ import java.util.ArrayList;
  * Created by mlhuang on 6/30/16.
  */
 public class Yanghui {
-
     public static void getRows(int num) {
         ArrayList<Integer> arrayList = new ArrayList<>();
 
