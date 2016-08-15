@@ -29,7 +29,7 @@ public class BinarySort {
     }
 
     public static void main(String args[]) {
-        int[] array=RandomUtil.getRandomNumList(15,100);
+        int[] array = RandomUtil.getRandomNumList(15, 100);
         System.out.println(" >>> Sort num as ");
         int[] result = binarySort(array);
         for (int k = 0; k < result.length; k++) {

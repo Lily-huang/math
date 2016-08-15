@@ -43,7 +43,7 @@ public class MostDup {
 
     public static ArrayList<String> mostDupUsingSort(String[] nos) {
         Map<String, Integer> map = getMap(nos);
-        Map<String,Integer> sortedMap=MapValueSort.getValueSortMap(map);
+        Map<String, Integer> sortedMap = MapValueSort.getValueSortMap(map);
         ArrayList<String> result = new ArrayList<>();
         int count = 0;
         Iterator<Map.Entry<String, Integer>> entries = sortedMap.entrySet().iterator();
@@ -52,7 +52,7 @@ public class MostDup {
             count = count == 0 ? entry.getValue() : count;
             if (entry.getValue() == count) {
                 result.add(entry.getKey());
-                System.out.println("add "+entry.getKey()+"----"+entry.getValue());
+                System.out.println("add " + entry.getKey() + "----" + entry.getValue());
             } else {
                 return result;
             }
